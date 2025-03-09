@@ -2,7 +2,7 @@ const GITHUB = {
   REPO_OWNER: 'reabit',// 需替换为实际用户名
   REPO_NAME: 'Timi',// 新建的存储数据的仓库名
   DATA_PATH: 'data/words.json',// 数据存储路径
-  TOKEN: null,// 从安全存储获取
+  TOKEN: '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',// 从安全存储获取
   MAX_RETRIES: 3,
   RETRY_DELAY: 1500
 };
