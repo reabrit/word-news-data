@@ -1,11 +1,20 @@
 // ============== GitHub 数据同步模块 ==============
 const GITHUB = {
+<<<<<<< HEAD
   REPO_OWNER: 'reabrit',          // 确保与GitHub用户名一致
   REPO_NAME: 'reabrit.github.io',    // 确保仓库存在且名称正确
   DATA_PATH: 'data/words.json',   // 数据存储路径
   TOKEN: null,                    // 从安全存储获取
   MAX_RETRIES: 5,                 // 增加重试次数
   RETRY_DELAY: 2000               // 延长重试间隔
+=======
+  REPO_OWNER: 'reabit',// 需替换为实际用户名
+  REPO_NAME: 'Timi',// 新建的存储数据的仓库名
+  DATA_PATH: 'data/words.json',// 数据存储路径
+  TOKEN: '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',// 从安全存储获取
+  MAX_RETRIES: 3,
+  RETRY_DELAY: 1500
+>>>>>>> 8bc6c54e8e6d0388b0cf7d561bf96bd942c3f929
 };
 
 
@@ -156,4 +165,15 @@ async function loadAllData() {
     if (backupStats) stats = JSON.parse(backupStats);
     return true;
   }
+<<<<<<< HEAD
 }    
+=======
+}
+
+function mergeStats(local, remote) {
+  return {
+    total: local.total + remote.total,
+    correct: local.correct + remote.correct
+  };
+}
+>>>>>>> 8bc6c54e8e6d0388b0cf7d561bf96bd942c3f929
